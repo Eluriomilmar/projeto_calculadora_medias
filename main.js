@@ -1,6 +1,6 @@
 const form = document.getElementById("form-atividade");
-const imgAprovado = "<img src='./images/aprovado.png', alt='Emojicelebrando' />";
-const imgReprovado = "<img src='./images/reprovado.png', alt='Emoji decepcionado' />";
+const imgAprovado = <img src='./images/aprovado.png', alt='Emoji celebrando' />;
+const imgReprovado = <img src='./images/reprovado.png', alt='Emoji decepcionado' />;
 const atividades = [];
 const notas = [];
 const spanAprovado = "<span class='resultado aprovado'>Aprovado</span>";
@@ -30,7 +30,7 @@ function adicionaLinha() {
     let linha = "<tr>";
     linha += `<td>${inputNomeAtividade.value}</td>`;
     linha += `<td>${inputNotaAtividade.value}</td>`;
-    linha += `<td>${inputNotaAtividade.value >= notaMinima ? imgAprovado: imgReprovado}</td>`;
+    linha += `<td>${inputNotaAtividade.value >= notaMinima ? imgAprovado : imgReprovado}</td>`;
     linha += "</tr>";
 
     linhas += linha;
